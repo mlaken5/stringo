@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "start": "next start"
+    "export": "next export",
+    "start": "npx serve out",
+    "postbuild": "next export"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -70,6 +72,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/seedrandom": "^3.0.8"
+    "@types/seedrandom": "^3.0.8",
+    "serve": "^14.0.0"
   }
 }
